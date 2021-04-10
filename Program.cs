@@ -18,11 +18,11 @@ namespace Bank
 
             bank.ViewAccountInfo();
             bank.DepositMoney(rnd.Next(100, 10000), "Pepa Vlastník");
-            Console.WriteLine("Stav účtů po vložení peněz:\n");
-            bank.ViewAccountInfo();
-
             IAccount account = bank.FindAccount("Karel Zahradník");
             // account.Balance = 500; Je pouze pro čtení, nepůjde
+            bank.DepositMoney(account.Balance, account.Owner);
+            Console.WriteLine("Stav účtů po vložení peněz:\n");
+            bank.ViewAccountInfo();
 
             Console.ReadLine();
 

@@ -4,6 +4,6 @@
     {
         double Balance { get; }
         string Owner { get; }
-
+  
     }
 }
