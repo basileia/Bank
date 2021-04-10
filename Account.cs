@@ -17,5 +17,10 @@ namespace Bank
             Balance = openingBalance;
             Owner = owner;
         }
+
+        public override string ToString()
+        {
+            return $"Vlastník účtu: {Owner}\nZůstatek: {Balance}";
+        }
     }
 }

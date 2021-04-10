@@ -10,6 +10,14 @@ namespace Bank
     {
         static void Main(string[] args)
         {
+            Bank bank = new Bank();
+            bank.CreateAnAccount(200, "Pepa");
+            
+            IAccount account = bank.FindAccount("karel");
+            Console.WriteLine(account);
+
+            Console.ReadLine();
+
 
         }
     }

@@ -10,5 +10,7 @@ namespace Bank
     {
         double Balance { get; }
         string Owner { get; }
+
+        string ToString();
     }
 }
