@@ -36,7 +36,7 @@ namespace Bank
             Account account = (Account)FindAccount(owner);
             if(account != null)
             {
-                account.Balance += deposit;
+                account.Balance += Math.Max(0, deposit); ;
             }
         }
 
